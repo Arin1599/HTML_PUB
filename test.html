@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>A Love Story - Chapter One</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Playfair+Display:ital@0;1&display=swap');
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: 'Libre Baskerville', serif;
+            background: #f4efe1;
+            padding: 40px;
+            border: 3px double #8b4513;
+            box-shadow: 0 0 20px rgba(139, 69, 19, 0.2);
+            position: relative;
+            background-image: 
+                url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC');
+        }
+
+        .page-corner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, transparent 50%, #d4c5b1 50%);
+            animation: flip-corner 3s infinite;
+        }
+
+        @keyframes flip-corner {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(-5deg); }
+            20% { transform: rotate(0deg); }
+        }
+
+        .header {
+            background: #8b4513;
+            color: #f4efe1;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px double #f4efe1;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+        }
+
+        .header::after {
+            content: '✦';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #8b4513;
+            color: #f4efe1;
+            padding: 0 10px;
+            font-size: 20px;
+        }
+
+        .content {
+            padding: 35px;
+            background: rgba(244, 239, 225, 0.9);
+            margin: 20px 0;
+            line-height: 1.8;
+            font-size: 18px;
+            border-left: 2px solid #8b4513;
+            position: relative;
+        }
+
+        .romantic-text {
+            color: #8b4513;
+            font-style: italic;
+            font-size: 20px;
+            text-align: justify;
+            margin: 30px 0;
+            padding: 20px 40px;
+            position: relative;
+        }
+
+        .romantic-text::before, .romantic-text::after {
+            content: '"';
+            font-size: 60px;
+            position: absolute;
+            color: #8b4513;
+            opacity: 0.3;
+        }
+
+        .romantic-text::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .romantic-text::after {
+            bottom: -40px;
+            right: 0;
+        }
+
+        .proposal {
+            font-size: 24px;
+            text-align: center;
+            color: #8b4513;
+            margin: 40px 0;
+            font-family: 'Playfair Display', serif;
+            border-top: 1px solid #8b4513;
+            border-bottom: 1px solid #8b4513;
+            padding: 20px 0;
+        }
+
+        .book-mark {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            width: 30px;
+            height: 80px;
+            background: #8b4513;
+            transform: rotate(5deg);
+            animation: bookmark-sway 3s ease-in-out infinite;
+        }
+
+        @keyframes bookmark-sway {
+            0%, 100% { transform: rotate(5deg); }
+            50% { transform: rotate(-5deg); }
+        }
+
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 40px;
+            color: #8b4513;
+        }
+
+        .footer {
+            text-align: center;
+            color: #8b4513;
+            font-size: 14px;
+            margin-top: 30px;
+            border-top: 3px double #8b4513;
+            padding-top: 20px;
+        }
+
+        .chapter-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            color: #8b4513;
+            text-align: right;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        p {
+            text-indent: 30px;
+            margin: 20px 0;
+        }
+
+        p:first-letter {
+            font-size: 200%;
+            font-family: 'Playfair Display', serif;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="page-corner"></div>
+        <div class="book-mark"></div>
+        <div class="chapter-number">Chapter One: The Proposal</div>
+        <div class="header">
+            <h1>Our Love Story Continues...</h1>
+        </div>
+        
+        <div class="content">
+            <p>Dearest Ishu,</p>
+            
+            <p class="romantic-text">
+                "She is young enough to carry fear with her without letting it into her heart. Without being scared. She wears her fear lightly, like a veil, aware that there are dangers but letting the crackling awareness hover around her. It does not sink in, it buzzes in excitement like a swarm of invisible bees."
+            </p>
+            
+            <p>Ever since I have read this paragraph, I couldn't help but be inspired by your strength. You carry your fears like a light veil—aware of them but not letting them weigh you down.</p>
+            
+            <p>It's amazing how you can stay so composed and brave, buzzing with excitement rather than being scared.</p>
+            
+            <div class="proposal">
+                Happy Propose Day, love. ♥
+            </div>
+            
+            <p>Thanks for being my purpose—my reason for joy and strength.</p>
+            
+            <div class="signature">
+                Forever Yours,<br>
+                Vanilla
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Volume I • February 2024</p>
+            <p>To be continued... ♥</p>
+        </div>
+    </div>
+</body>
+</html>
